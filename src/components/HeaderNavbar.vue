@@ -61,13 +61,6 @@
           class="hamburger"
         />
       </div>
-      <div id="close" @click="closeMenu">
-        <img
-          :src="require('@/assets/closex.png')"
-          alt="hamburger"
-          class="hamburger close-hamburger"
-        />
-      </div>
     </div>
   </section>
 </template>

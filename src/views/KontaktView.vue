@@ -71,4 +71,10 @@ h2 {
 .center-grid-section {
   animation: appearFade 1s ease-in-out;
 }
+
+@media (max-width: 800px) {
+  .center-grid-section {
+    margin: 2em 0;
+  }
+}
 </style>

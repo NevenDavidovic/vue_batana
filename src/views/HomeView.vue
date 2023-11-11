@@ -32,7 +32,7 @@
   <section class="center-grid-section">
     <div class="flex-item-center">
       <div class="img-item">
-        <img :src="require('@/assets/zvan-chess.png')" alt="Logo" />
+        <img :src="require('@/assets/pehari-batana.jpg')" alt="Logo" />
       </div>
       <div class="text-item-center">
         <h1>Online učenje</h1>
@@ -55,7 +55,7 @@
         <router-link to="/prijave">Prijave</router-link>
       </div>
       <div class="img-item skola-saha-img">
-        <img :src="require('@/assets/andrej-chess.png')" alt="Logo" />
+        <img :src="require('@/assets/prostor-batana.jpg')" alt="Logo" />
       </div>
     </div>
   </section>
@@ -204,7 +204,7 @@ export default {
   margin: auto;
   font-size: 22px;
   color: gray;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .flex-item-center {
@@ -238,7 +238,7 @@ export default {
 .text-item-center p {
   color: white;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .text-item-center a {
   color: white;
@@ -376,9 +376,6 @@ export default {
   .skola-saha-text {
     order: 2;
   }
-  .img-item {
-    background-color: #1d1d36;
-  }
 
   .obavijesti {
     flex-direction: column;
@@ -398,4 +395,6 @@ export default {
     width: 100%;
   }
 }
+
+/*Paralax effect */
 </style>
