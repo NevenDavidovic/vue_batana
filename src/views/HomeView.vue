@@ -96,11 +96,9 @@
       Follow <span class="color-title">Šahovski klub Batana</span> <br />
       on Facebook and YouTube
     </p>
-    <carousel :items-to-show="0.5" class="gallery">
-      <slide v-for="slide in 2" :key="slide">
-        <div class="row" v-for="(image, index) in images" :key="index">
-          <img :src="image" alt="Gallery Image" class="gallery-image" />
-        </div>
+    <carousel class="gallery">
+      <slide v-for="(image, index) in images" :key="index">
+        <img :src="image" alt="Gallery Image" class="gallery-image" />
       </slide>
 
       <template #addons>
