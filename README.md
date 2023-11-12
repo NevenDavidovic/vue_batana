@@ -1,6 +1,6 @@
 # Šahovski Klub Batana / Website
 
-See [(https://cli.vuejs.org/config/](https://sahovski-klub-batana.vercel.app/))
+See [website of Šahovski Klub Batana ](https://sahovski-klub-batana.vercel.app/))
 
 
 
