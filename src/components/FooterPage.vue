@@ -27,7 +27,7 @@
         <div class="text-kontakt">
           <p>Pekarska 6</p>
           <p>52210, Rovinj52</p>
-          <p>info.skbatana@gmail.com</p>
+          <p>{{ $store.state.mailKluba }}</p>
         </div>
       </div>
     </div>

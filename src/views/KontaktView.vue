@@ -7,13 +7,13 @@
       </div>
       <div class="text-item-center batana-item">
         <h1>Posjetite nas</h1>
-        <p>Šahovski klub Batana</p>
+        <p>{{ $store.state.imeKluba }}</p>
         <h2>ADRESA</h2>
         <p>Pekarska 6, 52210 Rovinj</p>
         <h2>INFORMACIJE</h2>
         <p>
           Za informacije ili pitanja <br />
-          E-MAIL sk.batana.rovinj@gmail.com
+          E-MAIL: {{ $store.state.mailKluba }}
         </p>
         <h2>RADNO VRIJEME</h2>
         <p>

@@ -3,7 +3,8 @@
 
   <h1 class="prijave-h">Prijave</h1>
   <p class="prijave-d">
-    Šahovski Klub Batana Rovinj održava školu šaha petkom od 18 do 21h <br />
+    {{ $store.state.imeKluba }} Rovinj održava školu šaha petkom od 18 do 21h
+    <br />
     u prostorijama Kluba (Vodnjanska 22, ugao sa Pekarskom).<br />
     Škola je do kraja 2023. godine besplatna. <br />
     Dobrodošla su sva zainteresirana djeca a i odrasli.<br />
@@ -12,7 +13,7 @@
     Za sve one koji su zainteresirani biti polaznici naše škole šaha <br />
     prijave se mogu izvršiti na e-mail <br />
     <b
-      >sk.batana.rovinj@gmail.com ili to <br />
+      >{{ $store.state.mailKluba }} ili to <br />
       možete napraviti osobnim dolaskom</b
     >.
   </p>
