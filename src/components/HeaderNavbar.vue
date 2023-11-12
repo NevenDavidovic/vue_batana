@@ -26,6 +26,13 @@
 
   <section class="navbar">
     <div class="navbar-items">
+      <div id="close" @click="closeMenu()">
+        <img
+          :src="require('@/assets/closex.png')"
+          alt="hamburger"
+          class="hamburger"
+        />
+      </div>
       <div class="navbar-item">
         <router-link to="/" class="home-link">Home</router-link>
       </div>
@@ -54,6 +61,7 @@
       <div class="navbar-item">
         <router-link to="/kontakt">Kontakt</router-link>
       </div>
+
       <div id="open" @click="openMenu()">
         <img
           :src="require('@/assets/hamburger.png')"
