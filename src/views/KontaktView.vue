@@ -13,7 +13,7 @@
         <h2>INFORMACIJE</h2>
         <p>
           Za informacije ili pitanja <br />
-          E-MAIL info.skbatana@gmail.com
+          E-MAIL sk.batana.rovinj@gmail.com
         </p>
         <h2>RADNO VRIJEME</h2>
         <p>

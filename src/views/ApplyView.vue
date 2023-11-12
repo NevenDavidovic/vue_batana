@@ -12,7 +12,7 @@
     Za sve one koji su zainteresirani biti polaznici naše škole šaha <br />
     prijave se mogu izvršiti na e-mail <br />
     <b
-      >info.skbatana@gmail.com ili to <br />
+      >sk.batana.rovinj@gmail.com ili to <br />
       možete napraviti osobnim dolaskom</b
     >.
   </p>
