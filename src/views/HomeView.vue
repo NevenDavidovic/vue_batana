@@ -364,6 +364,15 @@ export default {
 }
 
 @media (max-width: 800px) {
+  .text-item-background h1 {
+    font-size: 22px;
+  }
+  .text-item-background {
+    padding: 20px 40px;
+  }
+  .background-photo-section {
+    height: 430px;
+  }
   .fair-play-section {
     flex-direction: column;
   }
