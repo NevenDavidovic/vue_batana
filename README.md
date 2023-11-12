@@ -1,5 +1,12 @@
-# vue_batana
+# Šahovski Klub Batana / Website
 
+See [website of Šahovski Klub Batana ](https://sahovski-klub-batana.vercel.app/)
+
+
+
+![image](https://github.com/NevenDavidovic/vue_batana/assets/57957655/67f6391f-2bec-461d-b214-90098cb0a3f6)
+
+ 
 ## Project setup
 ```
 npm install
