@@ -289,5 +289,9 @@ export default {
   .dropdown-content a {
     padding: 6px 16px;
   }
+
+  .above-header {
+    grid-template-columns: 1f;
+  }
 }
 </style>
