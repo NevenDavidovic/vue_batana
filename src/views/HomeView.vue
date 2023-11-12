@@ -96,7 +96,7 @@
       Follow <span class="color-title">Šahovski klub Batana</span> <br />
       on Facebook and YouTube
     </p>
-    <carousel class="gallery">
+    <carousel :items-to-show="0.5" class="gallery">
       <slide v-for="(image, index) in images" :key="index">
         <img :src="image" alt="Gallery Image" class="gallery-image" />
       </slide>
