@@ -43,7 +43,7 @@ export default {
   animation: appearFade 1s ease-in-out;
 }
 
-.gallery-image {
+.row-galerija .gallery-image {
   width: 100%;
 }
 </style>
