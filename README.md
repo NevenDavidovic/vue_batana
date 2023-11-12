@@ -1,6 +1,6 @@
 # Šahovski Klub Batana / Website
 
-See [website of Šahovski Klub Batana ](https://sahovski-klub-batana.vercel.app/))
+See [website of Šahovski Klub Batana ](https://sahovski-klub-batana.vercel.app/)
 
 
 
