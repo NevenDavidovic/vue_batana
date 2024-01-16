@@ -131,11 +131,12 @@ export default {
   animation: appearFade 1s ease-in-out;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); /* Initial box shadow */
   transition: all 1s ease-in-out;
+  border-radius: 8px;
 }
 
 .text-item-background:hover {
   box-shadow: 0 0 20px 0 #d9e2ec;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .text-item-background:hover .text-item-background h1 {
   font-size: 40px;
@@ -151,6 +152,8 @@ export default {
   color: white;
   padding: 10px 40px;
   text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid white;
 }
 
 .fair-play-section {
@@ -210,7 +213,7 @@ export default {
   background-color: #1d1d36;
 }
 .text-item-center h1 {
-  color: #5755ce;
+  color: white;
   font-size: 40px;
 }
 .text-item-center p {
@@ -226,7 +229,15 @@ export default {
   text-decoration: none;
   padding: 10px 10px;
   font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid white;
+  transition: all 0.5s ease-in-out;
 }
+.text-item-center a:hover {
+  box-shadow: 0 0 20px 0 #d9e2ec;
+  transition: all 0.5s ease-in-out;
+}
+
 .text-item-center p,
 .text-item-center h1,
 .text-item-center a {
@@ -263,6 +274,7 @@ export default {
 }
 .gallery-image {
   max-height: 300px;
+  border-radius: 8px;
 }
 
 .gallery {

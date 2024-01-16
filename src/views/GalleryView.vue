@@ -1,6 +1,6 @@
 <template>
   <HeaderNavbar />
-  <h1>Galerija</h1>
+  <h1 class="galery-title">Galerija</h1>
   <section class="galerija-section">
     <div class="row row-galerija" v-for="(image, index) in images" :key="index">
       <img
@@ -56,6 +56,11 @@ export default {
 </script>
 
 <style>
+.galery-title {
+  color: #5755ce;
+  font-size: 60px;
+  font-weight: 600;
+}
 .galerija-section {
   display: flex !important;
   max-width: 1440px;
@@ -70,6 +75,7 @@ export default {
 .row-galerija .gallery-image {
   width: 100%;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .modal-pic-viewer {
@@ -95,8 +101,10 @@ export default {
   margin: auto;
   padding: 60px;
   border: 1px solid gray;
+  border-radius: 4px;
 }
 .zatvori {
+  cursor: pointer;
   position: absolute;
   right: 5px;
   top: 5px;
@@ -108,7 +116,7 @@ export default {
 .chosen-image {
   position: relative;
   background: white;
-
+  border-radius: 4px;
   height: 100%;
 
   margin: auto;

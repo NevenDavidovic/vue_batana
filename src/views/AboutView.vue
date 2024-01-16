@@ -119,6 +119,7 @@ export default {
 .about img {
   width: 907px;
   margin: auto;
+  border-radius: 8px;
 }
 
 .galerija h1 {
