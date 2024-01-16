@@ -32,6 +32,7 @@
     </div>
     <div class="flex-item-center"></div>
   </section>
+
   <FooterPage />
 </template>
 
@@ -42,7 +43,13 @@ import FooterPage from "@/components/FooterPage.vue";
 
 export default {
   data() {
-    return {};
+    return {
+      formData: {
+        name: "",
+        email: "",
+        message: "",
+      },
+    };
   },
 
   name: "KontaktView",

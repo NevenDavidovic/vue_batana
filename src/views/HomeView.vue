@@ -60,36 +60,6 @@
     </div>
   </section>
 
-  <!-- <h1 class="obavijesti-title">Obavijesti</h1>
-
-  <section class="obavijesti">
-    <div class="obavijesti-item first">
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSahovskiKlubBatana%2Fposts%2Fpfbid0UR8ZxrNBm7XkiVHQo73DHf8a8CoDqnBXrxHwVw7m9WdEEZys8AY5eajD7Vodb4gPl&show_text=true&width=500"
-        width="500"
-        height="550"
-        style="border: none; overflow: hidden"
-        scrolling="yes"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    </div>
-
-    <div class="obavijesti-item">
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSahovskiKlubBatana%2Fposts%2Fpfbid0HQ9GcH3wiMgY5pNjg87nkf2vzTz165UqW1bJk2t7T5FowLnAiCM4d43XthyPgPzEl&show_text=true&width=500"
-        width="500"
-        height="500"
-        style="border: none; overflow: hidden"
-        scrolling="yes"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    </div>
-  </section> -->
-
   <section class="life-and-chess">
     <h1>Život i šah</h1>
     <p>
@@ -159,8 +129,15 @@ export default {
   height: fit-content;
   padding: 40px 80px;
   animation: appearFade 1s ease-in-out;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); /* Initial box shadow */
+  transition: all 1s ease-in-out;
 }
-.text-item-background h1 {
+
+.text-item-background:hover {
+  box-shadow: 0 0 20px 0 #d9e2ec;
+  transition: all 1s ease-in-out;
+}
+.text-item-background:hover .text-item-background h1 {
   font-size: 40px;
 }
 
@@ -188,6 +165,9 @@ export default {
 
 .upper-block {
   flex: 1;
+}
+.upper-block img {
+  transition: all 1s ease-in-out;
 }
 
 .lower-block {
@@ -244,7 +224,7 @@ export default {
   margin: auto;
   background-color: #5755ce;
   text-decoration: none;
-  padding: 5px 10px;
+  padding: 10px 10px;
   font-size: 18px;
 }
 .text-item-center p,
