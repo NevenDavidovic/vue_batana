@@ -63,7 +63,7 @@
   <section class="life-and-chess">
     <h1>Život i šah</h1>
     <p>
-      Zaprati <span class="color-title">Šahovski klub Batana</span> <br />
+      Zaprati <span class="color-title">Šahovski klub Batanu</span> <br />
       na Facebook-u i YouTube-u
     </p>
     <carousel :items-to-show="1" class="gallery">

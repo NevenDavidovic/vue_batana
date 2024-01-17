@@ -54,6 +54,7 @@ const router = createRouter({
       return {
         el: to.hash,
         behavior: "smooth",
+        duration: 4000,
       };
     }
 
