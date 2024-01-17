@@ -11,51 +11,54 @@ const routes = [
     path: "/kontakt",
     name: "kontakt",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/KontaktView.vue"),
+    component: () => import("../views/KontaktView.vue"),
   },
   {
     path: "/ourteam",
     name: "ourteam",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/OurTeam.vue"),
+    component: () => import("../views/OurTeam.vue"),
   },
   {
     path: "/login",
     name: "login",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/LoginView.vue"),
+    component: () => import("../views/LoginView.vue"),
   },
   {
     path: "/galerija",
     name: "galerija",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/GalleryView.vue"),
+    component: () => import("../views/GalleryView.vue"),
   },
   {
     path: "/prijave",
     name: "prijave",
 
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ApplyView.vue"),
+    component: () => import("../views/ApplyView.vue"),
   },
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+
+    component: () => import("../views/AboutView.vue"),
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+
+  scrollBehavior(to) {
+    if (to.hash) {
+      return {
+        el: to.hash,
+        behavior: "smooth",
+      };
+    }
+
+    return { top: 0, behavior: "smooth" };
+  },
 });
 
 export default router;

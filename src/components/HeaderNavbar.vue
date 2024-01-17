@@ -112,11 +112,15 @@ export default {
   display: flex;
   justify-content: center;
   gap: 1em;
+  align-items: center;
 }
 
 .text-middle-item {
   display: flex;
   flex-direction: column;
+}
+.text-middle-item h1 {
+  margin-bottom: 0;
 }
 
 .text-middle-item h1,
@@ -125,8 +129,8 @@ export default {
 }
 
 .middle-item img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 }
 
 .right-item {

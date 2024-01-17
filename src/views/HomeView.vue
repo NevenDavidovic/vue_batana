@@ -63,8 +63,8 @@
   <section class="life-and-chess">
     <h1>Život i šah</h1>
     <p>
-      Follow <span class="color-title">Šahovski klub Batana</span> <br />
-      on Facebook and YouTube
+      Zaprati <span class="color-title">Šahovski klub Batana</span> <br />
+      na Facebook-u i YouTube-u
     </p>
     <carousel :items-to-show="1" class="gallery">
       <slide v-for="(image, index) in images" :key="index">
