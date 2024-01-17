@@ -71,14 +71,24 @@ export default {
   background-color: #5755ce;
   padding: 5px;
   animation: appearFade 1s ease-in-out;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
 }
 
 .row-galerija .gallery-image {
   width: 100%;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 3px solid rgba(255, 255, 255, 0);
+  transition: all 0.5s ease-in-out;
 }
-
+.row-galerija .gallery-image:hover {
+  border: 3px solid white;
+  box-shadow: 0 0 20px 0 #d9e2ec;
+  transition: all 0.5s ease-in-out;
+}
 .modal-pic-viewer {
   display: flex;
   align-content: center;
@@ -92,7 +102,9 @@ export default {
   top: 0;
   right: 0;
 }
-
+.row-galerija {
+  position: relative;
+}
 .inside-modal {
   position: relative;
   background: white;
@@ -101,7 +113,7 @@ export default {
   max-height: 500px;
   margin: auto;
   padding: 60px;
-  border: 1px solid gray;
+  border: 1px solid #5755ce;
   border-radius: 4px;
 }
 .zatvori {
@@ -123,9 +135,17 @@ export default {
   margin: auto;
 }
 
+.row-galerija .gallery-image + .cta-see {
+  display: none;
+}
+
+.row-galerija .gallery-image:hover + .cta-see {
+  display: flex;
+  animation: changeOpacity 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 @media (max-width: 1180px) {
-  .modal-pic-viewer {
-  }
   .inside-modal {
     width: 90%;
     height: fit-content;
