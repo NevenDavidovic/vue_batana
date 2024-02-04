@@ -7,7 +7,6 @@
         :src="image"
         alt="Gallery Image"
         class="gallery-image"
-        loading="lazy"
         @click="enlargePhoto(index)"
       />
     </div>

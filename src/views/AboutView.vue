@@ -42,7 +42,12 @@
     </p>
   </section>
 
-  <section class="center-grid-section">
+  <section
+    class="center-grid-section"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <div class="flex-item-center">
       <div class="img-item">
         <img :src="require('@/assets/šah-u-prirodi.jpg')" alt="Logo" />

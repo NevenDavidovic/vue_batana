@@ -17,7 +17,12 @@
       možete napraviti osobnim dolaskom</b
     >.
   </p>
-  <div class="prijave-element">
+  <div
+    class="prijave-element"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <div class="prijave-item">
       <h1>
         Radimo ovo zato <br />
@@ -56,9 +61,20 @@
     </div>
   </div>
   <br />
-  <h1>Posjetite nas u Klubu u Pekarskoj</h1>
+  <h1
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
+    Posjetite nas u Klubu u Pekarskoj
+  </h1>
   <br />
-  <div class="image-batana">
+  <div
+    class="image-batana"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <img :src="require('@/assets/sk-batana-space.jpg')" alt="Logo" />
   </div>
 

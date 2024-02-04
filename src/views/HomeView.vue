@@ -13,7 +13,12 @@
     </div>
   </section>
 
-  <section class="fair-play-section">
+  <section
+    class="fair-play-section"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom"
+    data-aos-duration="2500"
+  >
     <div class="upper-block">
       <img :src="require('@/assets/logo.png')" alt="Logo" />
     </div>
@@ -29,7 +34,12 @@
     </div>
   </section>
 
-  <section class="center-grid-section">
+  <section
+    class="center-grid-section"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <div class="flex-item-center">
       <div class="img-item">
         <img :src="require('@/assets/pehari-batana.jpg')" alt="Logo" />
@@ -60,7 +70,12 @@
     </div>
   </section>
 
-  <section class="life-and-chess">
+  <section
+    class="life-and-chess"
+    data-aos="fade-up"
+    data-aos-anchor-placement="top-center"
+    data-aos-duration="1000"
+  >
     <h1>Život i šah</h1>
     <p>
       Zaprati <span class="color-title">Šahovski klub Batanu</span> <br />
