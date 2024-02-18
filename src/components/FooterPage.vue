@@ -1,5 +1,4 @@
 <template>
-  ja
   <section class="footer">
     <div class="container-footer">
       <div class="galerija footer-item">
