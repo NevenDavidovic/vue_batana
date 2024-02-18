@@ -90,9 +90,6 @@ export default {
 }
 h2 {
   color: #5755ce;
-  margin: auto;
-  width: 90%;
-  text-align: left;
 }
 
 .center-grid-section {
@@ -137,6 +134,11 @@ h2 {
 @media (max-width: 480px) {
   .map-section {
     padding: 10px 5px;
+  }
+  h2 {
+    margin: auto;
+    width: 90%;
+    text-align: left;
   }
 }
 </style>
