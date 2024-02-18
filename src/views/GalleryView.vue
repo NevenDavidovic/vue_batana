@@ -234,5 +234,8 @@ export default {
   .row-galerija .gallery-image {
     max-height: 100%;
   }
+  .btn-tab {
+    font-size: 14px;
+  }
 }
 </style>
