@@ -1,7 +1,12 @@
 <template>
   <HeaderNavbar />
   <h1 class="galery-title">Galerija</h1>
-  <section class="galerija-section">
+
+  <section class="cta-tab-btn">
+    <div class="btn-tab" @click="openGalery">Fotografije</div>
+    <div class="btn-tab" @click="openVideoGallery">Video zapisi</div>
+  </section>
+  <section class="galerija-section" :class="{ hidden: !openImages }">
     <div class="row row-galerija" v-for="(image, index) in images" :key="index">
       <img
         :src="image"
@@ -10,6 +15,28 @@
         @click="enlargePhoto(index)"
       />
     </div>
+  </section>
+
+  <section class="video-galerija-section" :class="{ hidden: openImages }">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/EINSGZVBw3U?si=xgnpyeWMC4NlaI9N"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/qOYvuN7SyQ0?si=JXyoptOvypW4caB7"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </section>
 
   <div class="modal-pic-viewer" v-if="openModal">
@@ -34,6 +61,7 @@ export default {
       images: imagePaths,
       imageSelected: "",
       openModal: false,
+      openImages: true,
     };
   },
 
@@ -51,34 +79,70 @@ export default {
     closeModal() {
       this.openModal = false;
     },
+
+    openGalery() {
+      this.openImages = true;
+    },
+    openVideoGallery() {
+      this.openImages = false;
+    },
   },
 };
 </script>
 
 <style>
+.cta-tab-btn {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  color: white;
+  padding: 20px 0 0 20px;
+  animation: appearFade 1s ease-in-out;
+  padding: 20px 0 0 20px;
+  border-bottom: 2px solid white;
+  background: linear-gradient(
+    180deg,
+    rgba(29, 29, 54, 1) 0%,
+    rgba(87, 85, 206, 1) 100%
+  );
+}
+
+.btn-tab {
+  background: #5755ce;
+  padding: 20px 35px;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  font-size: 22px;
+}
+
 .galery-title {
-  color: #5755ce;
+  color: white;
   font-size: 60px;
   font-weight: 600;
-  margin-top: 50px;
+  padding: 50px 0;
+  background: #1d1d36;
 }
-.galerija-section {
-  display: flex !important;
+.galerija-section,
+.video-galerija-section {
+  display: flex;
   max-width: 1440px;
   flex-wrap: wrap;
-  margin: 2em auto;
+  margin: 0 auto;
   gap: 5px;
-  background: rgb(87, 85, 206);
+
   background: linear-gradient(
     356deg,
     rgba(29, 29, 54, 1) 0%,
     rgba(87, 85, 206, 1) 100%
   );
-  padding: 5px;
   animation: appearFade 1s ease-in-out;
   justify-content: center;
-  border-radius: 8px;
-  padding: 16px;
+
+  padding: 50px 5px;
   cursor: pointer;
 }
 
