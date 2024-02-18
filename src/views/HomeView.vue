@@ -147,6 +147,9 @@ export default {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); /* Initial box shadow */
   transition: all 1s ease-in-out;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .text-item-background:hover {
