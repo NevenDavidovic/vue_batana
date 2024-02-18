@@ -7,83 +7,25 @@
       </div>
       <div class="text-item-center batana-item">
         <h1>Posjetite nas</h1>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
+        <p>
           {{ $store.state.imeKluba }}
         </p>
-        <h2
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          ADRESA
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          Pekarska 6, 52210 Rovinj
-        </p>
-        <h2
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          INFORMACIJE
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
+        <h2>ADRESA</h2>
+        <p>Pekarska 6, 52210 Rovinj</p>
+        <h2>INFORMACIJE</h2>
+        <p>
           Za informacije ili pitanja <br />
           E-MAIL: {{ $store.state.mailKluba }}
         </p>
-        <h2
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          RADNO VRIJEME
-        </h2>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
+        <h2>RADNO VRIJEME</h2>
+        <p>
           Za igranje i učenje šaha u klubu za sada smo dostupni u terminima
           ispod:
         </p>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          Utorak: 18:00 - 20:00
-        </p>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          Četvrtak: 18:00-20:00
-        </p>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
-          Petak: 18:00-20:00
-        </p>
-        <p
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-          data-aos-duration="1000"
-        >
+        <p>Utorak: 18:00 - 20:00</p>
+        <p>Četvrtak: 18:00-20:00</p>
+        <p>Petak: 18:00-20:00</p>
+        <p>
           Preko ljeta smo zatvoreni no nastavljamo sa povremenim druženjima
           uživo, i u istim terminima online za sve one koje šah okupira cijelu
           godinu.
@@ -148,6 +90,9 @@ export default {
 }
 h2 {
   color: #5755ce;
+  margin: auto;
+  width: 90%;
+  text-align: left;
 }
 
 .center-grid-section {
@@ -186,6 +131,12 @@ h2 {
 @media (max-width: 800px) {
   .center-grid-section {
     margin: 2em 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-section {
+    padding: 10px 5px;
   }
 }
 </style>

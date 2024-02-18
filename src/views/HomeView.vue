@@ -280,6 +280,10 @@ export default {
 
 .life-and-chess {
   background-color: #5755ce;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 3em;
 }
 
 .life-and-chess h1 {
@@ -322,6 +326,8 @@ export default {
 
 .color-title {
   color: #1d1d36;
+  font-weight: 700;
+  line-height: 1.4;
 }
 .center-grid-section {
   margin: 3em auto;
@@ -380,6 +386,7 @@ export default {
   }
   .fair-play-section {
     flex-direction: column;
+    gap: 2em;
   }
 
   .flex-item-center {
@@ -406,6 +413,32 @@ export default {
 
 @media (max-width: 600px) {
   .upper-block img {
+    width: 100%;
+  }
+  .text-item-center a {
+  }
+  .text-item-center p,
+  .text-item-center h1 {
+    max-width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lower-block p {
+    max-width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .life-and-chess p {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel {
     width: 100%;
   }
 }

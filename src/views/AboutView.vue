@@ -144,4 +144,11 @@ export default {
     padding: 0 16px;
   }
 }
+@media (max-width: 600px) {
+  .about p {
+    max-width: 95%;
+    text-align: left;
+    margin: auto;
+  }
+}
 </style>

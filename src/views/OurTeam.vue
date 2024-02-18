@@ -2,7 +2,7 @@
   <HeaderNavbar />
   <br />
   <h1 class="nas-tim-h">Naš tim trenera</h1>
-  <p>
+  <p class="tren-desc">
     Odaberite jednog od naših trenera koji su tu da pruže svoje šahovsko
     iskustvo i znanje da bi se vaša igra digla na višu razinu
   </p>
@@ -80,7 +80,7 @@ export default {
   display: flex;
   flex-direction: column;
   width: 200px;
-  align-items: center;
+  align-items: left;
   gap: 10px;
   animation: appearFade 1s ease-in-out;
 }
@@ -127,6 +127,31 @@ export default {
   .our-team {
     flex-direction: column;
     align-items: center;
+  }
+
+  @media (max-width: 600px) {
+    .our-team-item {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .our-team-item p {
+      max-width: 100%;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .tren-desc {
+      max-width: 90%;
+      margin: auto;
+    }
+    .our-team {
+      gap: 2em;
+    }
+
+    .nas-tim-h {
+      margin-bottom: 0.5em;
+    }
   }
 }
 </style>

@@ -1,4 +1,5 @@
 <template>
+  ja
   <section class="footer">
     <div class="container-footer">
       <div class="galerija footer-item">
@@ -64,6 +65,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
 }
 
 .image-container {
@@ -84,6 +86,7 @@ export default {
   align-items: flex-start;
   max-width: 200px;
   margin: 0 auto;
+  gap: 1em;
 }
 
 .kontakt h1 {
@@ -95,7 +98,7 @@ export default {
 .galerija a {
   color: white;
   text-decoration: none;
-  margin: 1em 0;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;

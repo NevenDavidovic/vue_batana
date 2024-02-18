@@ -165,5 +165,22 @@ export default {
   .prijave-element {
     flex-direction: column;
   }
+  .prijave-item {
+    max-width: 100%;
+    width: 100%;
+    gap: 1em;
+  }
+  .prijave-item p[data-v-c76e7e2e] {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .prijave-d {
+    max-width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 </style>

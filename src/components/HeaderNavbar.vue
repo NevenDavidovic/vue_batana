@@ -287,7 +287,6 @@ export default {
 
 @media (min-width: 800px) {
   .dropdown:hover .dropdown-content {
-    animation: scaleNav 0.3s ease-in-out;
     border-bottom: 4px solid white;
     transition: all 1s ease-in-out;
   }
