@@ -3,15 +3,13 @@
 
   <h1 class="prijave-h">Prijave</h1>
   <p class="prijave-d">
-    {{ $store.state.imeKluba }} Rovinj održava školu šaha petkom od 18 do 21h
-    <br />
-    u prostorijama Kluba (Vodnjanska 22, ugao sa Pekarskom).<br />
-    Škola je do kraja 2023. godine besplatna. <br />
-    Dobrodošla su sva zainteresirana djeca a i odrasli.<br />
+    {{ $store.state.imeKluba }} Rovinj održava školu šaha petkom od 18 do 21h u
+    prostorijama Kluba (Vodnjanska 22, ugao sa Pekarskom). Škola je do kraja
+    2023. godine besplatna. Dobrodošla su sva zainteresirana djeca a i odrasli.
 
     <br />
-    Za sve one koji su zainteresirani biti polaznici naše škole šaha <br />
-    prijave se mogu izvršiti na e-mail <br />
+    Za sve one koji su zainteresirani biti polaznici naše škole šaha prijave se
+    mogu izvršiti na e-mail
     <b
       >{{ $store.state.mailKluba }} ili to <br />
       možete napraviti osobnim dolaskom</b
@@ -39,10 +37,7 @@
       </p>
     </div>
     <div class="prijave-item">
-      <h1>
-        Cijenjeni <br />
-        roditelji & polaznici
-      </h1>
+      <h1>Cijenjeni roditelji & polaznici</h1>
       <p>
         Za najmanje polaznike i one mlađe od 18 roditelji mogu obaviti prijave
         na slijedeći način: <br />
@@ -60,7 +55,7 @@
       <p><b>info.skbatana@gmail.com</b></p>
     </div>
   </div>
-  <br />
+
   <h1
     data-aos="fade-up"
     data-aos-anchor-placement="top-center"
@@ -117,6 +112,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
+  gap: 1em;
 }
 .prijave-item p {
   max-width: 70%;
@@ -142,6 +138,8 @@ export default {
 }
 
 .prijave-h {
+  margin: 50px 0;
+
   font-size: 60px;
   animation: appearFade 1s ease-in-out;
   color: #5755ce;
@@ -150,6 +148,10 @@ export default {
   color: gray;
   line-height: 2;
   animation: appearFade 1s ease-in-out;
+  max-width: 1100px;
+  width: 90%;
+  margin: auto;
+  text-align: left;
 }
 .prijave-item ul li {
   color: white;

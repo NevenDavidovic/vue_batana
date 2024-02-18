@@ -60,6 +60,7 @@ export default {
   color: #5755ce;
   font-size: 60px;
   font-weight: 600;
+  margin-top: 50px;
 }
 .galerija-section {
   display: flex !important;
@@ -67,7 +68,12 @@ export default {
   flex-wrap: wrap;
   margin: 2em auto;
   gap: 5px;
-  background-color: #5755ce;
+  background: rgb(87, 85, 206);
+  background: linear-gradient(
+    356deg,
+    rgba(29, 29, 54, 1) 0%,
+    rgba(87, 85, 206, 1) 100%
+  );
   padding: 5px;
   animation: appearFade 1s ease-in-out;
   justify-content: center;
@@ -114,6 +120,8 @@ export default {
   padding: 60px;
   border: 1px solid #5755ce;
   border-radius: 4px;
+  transition: all 0.7s ease-in-out;
+  animation: opacityChange 0.7s ease-in-out alternate;
 }
 .zatvori {
   cursor: pointer;

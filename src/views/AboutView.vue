@@ -117,7 +117,7 @@ export default {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  margin: 3em 0;
+  margin: 50px 0;
   animation: appearFade 1s ease-in-out;
 }
 

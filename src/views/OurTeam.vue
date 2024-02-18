@@ -91,8 +91,8 @@ export default {
 .our-team-item h4 {
   max-width: 200px;
   margin: 0 auto;
-  color: gray;
-  font-weight: 400;
+  color: #1d1d36;
+  font-weight: 600;
 }
 .our-team-item p {
   max-width: 200px;
@@ -105,6 +105,11 @@ export default {
 }
 .img-team img {
   height: 100%;
+}
+.tren-desc {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1d1d36;
 }
 
 @keyframes appearFade {
@@ -122,6 +127,7 @@ export default {
 .nas-tim-h {
   font-size: 60px;
   color: #5755ce;
+  margin-top: 50px;
 }
 @media (max-width: 1024px) {
   .our-team {
