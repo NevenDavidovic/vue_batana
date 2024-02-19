@@ -91,8 +91,6 @@
 import HeaderNavbar from "@/components/HeaderNavbar.vue";
 import FooterPage from "@/components/FooterPage.vue";
 import imagePaths from "@/imageLoader";
-import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Navigation } from "vue3-carousel";
 
 export default {
   data() {
@@ -106,8 +104,7 @@ export default {
   components: {
     HeaderNavbar,
     FooterPage,
-    Carousel,
-    Slide,
+
     Navigation,
   },
 };
