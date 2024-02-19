@@ -81,15 +81,6 @@
       Zaprati <span class="color-title">Šahovski klub Batanu</span> <br />
       na Facebook-u i YouTube-u
     </p>
-    <carousel :items-to-show="1" class="gallery">
-      <slide v-for="(image, index) in images" :key="index">
-        <img :src="image" alt="Gallery Image" class="gallery-image" />
-      </slide>
-
-      <template #addons>
-        <navigation />
-      </template>
-    </carousel>
   </section>
 
   <FooterPage />
