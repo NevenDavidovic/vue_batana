@@ -104,8 +104,6 @@ export default {
   components: {
     HeaderNavbar,
     FooterPage,
-
-    Navigation,
   },
 };
 </script>
