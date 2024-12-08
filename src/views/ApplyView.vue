@@ -4,8 +4,8 @@
   <h1 class="prijave-h">Prijave</h1>
   <p class="prijave-d">
     {{ $store.state.imeKluba }} Rovinj održava školu šaha petkom od 18 do 21h u
-    prostorijama Kluba (Vodnjanska 22, ugao sa Pekarskom). Škola je do kraja
-    2023. godine besplatna. Dobrodošla su sva zainteresirana djeca a i odrasli.
+    prostorijama Kluba (Vodnjanska 22, ugao sa Pekarskom). Dobrodošla su sva
+    zainteresirana djeca a i odrasli.
 
     <br />
     Za sve one koji su zainteresirani biti polaznici naše škole šaha prijave se
